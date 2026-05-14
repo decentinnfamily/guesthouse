@@ -33,7 +33,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           const docSnap = await getDoc(docRef);
           
           const isAdminEmail = firebaseUser.email === 'abdulmoiz1914@gmail.com' || 
-                             firebaseUser.email === 'i230722@isb.nu.edu.pk';
+                             firebaseUser.email === 'decentinnfamily@gmail.com';
           
           if (docSnap.exists()) {
             const data = docSnap.data() as UserProfile;
